@@ -15,7 +15,8 @@ This project presents a comprehensive Power BI dashboard analyzing the sales and
 
 ![Dashboard GIF or Screenshot](url-to-your-gif-or-image)
 
-*(**PBI file** Find the power bi file on the path repository:..)*
+*(The complete Power BI project file (`.pbix`) is available for download in this repository.)*
+[Download Project File](https://github.com/nadiariosliza/Sales-Forecasting-Analysis-using-Power-BI/blob/main/pbix/Superstore_dashboard.pbix)
 
 ---
 
