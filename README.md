@@ -24,11 +24,34 @@ This project presents a comprehensive Power BI dashboard analyzing the sales and
 This dashboard is composed of multiple analytical views:
 
 1. **Executive Overview:** A high-level summary of critical KPIs (Total Sales, Profit, Customers, Orders) with year-over-year performance comparisons. Sales breakdown by region, category, and customer segment.
+<p align="center">
+  <img src="images/1_exec_view.jpg" alt="Executive View Dashboard" width="500"/>
+</p>
+
 2. **Sales Trend Forecasting:** Time series analysis of historical sales, including a 6-month forecast with confidence intervals to identify seasonal patterns and predict future performance.
+<p align="center">
+  <img src="images/2_sales.jpg" width="500"/>
+</p>
+
 3. **Customer & Segment Analysis:** Deep dive into customer behavior, including a custom repurchase rate calculation and a value-tier segmentation (High, Medium, Low Value) based on profit contribution. Customer distribution by geography and business segment.
+<p align="center">
+  <img src="images/3_customer.jpg" width="500"/>
+</p>
+
 4. **Product Analysis:** Quadrant analysis of product subcategories based on sales vs. profit, identifying top performers and underachievers. Category trends over time.
+<p align="center">
+  <img src="images/4_product.jpg" width="500"/>
+</p>
+
 5. **Shipping & Regional Dynamics:** Analysis of shipping modes, delivery times, and regional sales and profit distribution.
+<p align="center">
+  <img src="images/5_shipping.jpg" width="500"/>
+</p>
+
 6. **What-If Scenario Simulation:** An interactive sales goal simulation using a "what-if" parameter to help the sales team quantify the growth needed to meet targets.
+<p align="center">
+  <img src="images/6_simulation.jpg" width="500"/>
+</p>
 
 ---
 
