@@ -13,11 +13,9 @@ This project presents a comprehensive Power BI dashboard analyzing the sales and
 
 ## Dashboard Preview
 
-**[➡️ Click here for the LIVE INTERACTIVE DASHBOARD](link-to-your-published-power-bi-report)**
-
-*(**Pro-Tip:** Use Power BI's "Publish to web (public)" feature to generate a shareable link. Then, create a high-quality GIF or screenshot of your main dashboard page and embed it here.)*
-
 ![Dashboard GIF or Screenshot](url-to-your-gif-or-image)
+
+*(**PBI file** Find the power bi file on the path repository:..)*
 
 ---
 
@@ -25,12 +23,12 @@ This project presents a comprehensive Power BI dashboard analyzing the sales and
 
 This dashboard is composed of multiple analytical views:
 
-*   **Executive Overview:** A high-level summary of critical KPIs (Total Sales, Profit, Customers, Orders) with year-over-year performance comparisons.
-*   **Sales Trend Forecasting:** Time series analysis of historical sales, including a 6-month forecast to identify seasonal patterns and predict future performance.
-*   **Customer & Segment Analysis:** Deep dive into customer behavior, including a custom repurchase rate calculation and a value-tier segmentation (High, Medium, Low Value) based on profit contribution.
-*   **Product Analysis:** Quadrant analysis of product subcategories based on sales vs. profit, identifying top performers and underachievers.
-*   **Shipping & Regional Dynamics:** Analysis of shipping modes, delivery times, and regional sales and profit distribution.
-*   **Predictive Scenarios:** An interactive sales goal simulation using a "what-if" parameter to help the sales team quantify the growth needed to meet targets.
+1. **Executive Overview:** A high-level summary of critical KPIs (Total Sales, Profit, Customers, Orders) with year-over-year performance comparisons. Sales breakdown by region, category, and customer segment.
+2. **Sales Trend Forecasting:** Time series analysis of historical sales, including a 6-month forecast with confidence intervals to identify seasonal patterns and predict future performance.
+3. **Customer & Segment Analysis:** Deep dive into customer behavior, including a custom repurchase rate calculation and a value-tier segmentation (High, Medium, Low Value) based on profit contribution. Customer distribution by geography and business segment.
+4. **Product Analysis:** Quadrant analysis of product subcategories based on sales vs. profit, identifying top performers and underachievers. Category trends over time.
+5. **Shipping & Regional Dynamics:** Analysis of shipping modes, delivery times, and regional sales and profit distribution.
+6. **What-If Scenario Simulation:** An interactive sales goal simulation using a "what-if" parameter to help the sales team quantify the growth needed to meet targets.
 
 ---
 
@@ -45,6 +43,7 @@ The process began with a single flat file. In Power Query, the following steps w
 To optimize performance and create an efficient data structure, the single table was normalized into a **Snowflake Schema**.
 - **13 distinct dimension tables** were created for `Orders`, `Customers`, `Products`, `Locations`, etc.
 - **A central fact table** (`fct_Superstore`) was established containing KPIs like Sales and Profit.
+- Added a custom calendar table for time-series filtering and forecasting.
 - Relationships were defined to ensure correct filter propagation and accurate KPI calculations.
 
 ![ER Diagram from your report](url-to-your-er-diagram-image)
@@ -67,6 +66,7 @@ Advanced DAX was used to create complex calculations, including:
 - **Validate Forecasts:** Continuously monitor and validate forecast results against actual performance to refine the model's accuracy.
 - **Review Underperforming Products:** Assess whether subcategories with negative profits (e.g., Tables, Bookcases) still add strategic value or if their logistics costs should be reallocated to higher-performing products.
 - **Refine Repurchase Methodology:** The custom repurchase rate methodology should be continuously reviewed to ensure the threshold remains appropriate as the business grows.
+- Collect delivery time-to-destination data to improve shipping analysis.
 
 ---
 
