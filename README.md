@@ -69,7 +69,9 @@ To optimize performance and create an efficient data structure, the single table
 - Added a custom calendar table for time-series filtering and forecasting.
 - Relationships were defined to ensure correct filter propagation and accurate KPI calculations.
 
-![ER Diagram from your report](url-to-your-er-diagram-image)
+<p align="center">
+  <img src="images/ER_diagram.jpg" width="800"/>
+</p>
 
 ### 3. DAX Measures
 Advanced DAX was used to create complex calculations, including:
